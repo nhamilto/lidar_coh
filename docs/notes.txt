@@ -1,0 +1,5 @@
+sampling f = 0.83 Hz
+f = vector (0, 0.01, 0.415)
+U = mean(u(t))
+d_l = 36 m
+
