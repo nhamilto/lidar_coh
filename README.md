@@ -1,4 +1,4 @@
-${1}
+lidar_coh
 ============
 
 Nicholas Hamilton

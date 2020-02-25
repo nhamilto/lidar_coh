@@ -884,15 +884,15 @@
     return prefix ? prefix + id : id;
   };
 
-  // By default, Underscore uses ERB-style ${1} delimiters, change the
-  // following ${1} settings to use alternative delimiters.
-  _.${1}Settings = {
+  // By default, Underscore uses ERB-style lidar_coh delimiters, change the
+  // following lidar_coh settings to use alternative delimiters.
+  _.lidar_cohSettings = {
     evaluate    : /<%([\s\S]+?)%>/g,
     interpolate : /<%=([\s\S]+?)%>/g,
     escape      : /<%-([\s\S]+?)%>/g
   };
 
-  // When customizing `${1}Settings`, if you don't want to define an
+  // When customizing `lidar_cohSettings`, if you don't want to define an
   // interpolation, evaluation or escaping regex, we need one that is
   // guaranteed not to match.
   var noMatch = /.^/;
@@ -906,8 +906,8 @@
   // JavaScript micro-templating, similar to John Resig's implementation.
   // Underscore templating handles arbitrary delimiters, preserves whitespace,
   // and correctly escapes quotes within interpolated code.
-  _.${1} = function(str, data) {
-    var c  = _.${1}Settings;
+  _.lidar_coh = function(str, data) {
+    var c  = _.lidar_cohSettings;
     var tmpl = 'var __p=[],print=function(){__p.push.apply(__p,arguments);};' +
       'with(obj||{}){__p.push(\'' +
       str.replace(/\\/g, '\\\\')

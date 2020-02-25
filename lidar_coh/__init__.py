@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Top-level package for ${1} repository."""
+"""Top-level package for lidar_coh repository."""
 
 __author__ = """Nicholas Hamilton"""
 __email__ = 'nicholas.hamilton@nrel.gov'

@@ -3200,9 +3200,9 @@ jQuery.each( {
         }
 
         // Support: IE 9 - 11 only, iOS 7 only, Android Browser <=4.3 only
-        // Treat the ${1} element as a regular one in browsers that
+        // Treat the lidar_coh element as a regular one in browsers that
         // don't support it.
-        if ( nodeName( elem, "${1}" ) ) {
+        if ( nodeName( elem, "lidar_coh" ) ) {
             elem = elem.content || elem;
         }
 

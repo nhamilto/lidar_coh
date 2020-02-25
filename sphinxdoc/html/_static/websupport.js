@@ -586,11 +586,11 @@
   }
 
   /**
-   * A simple ${1} renderer. Placeholders such as <%id%> are replaced
+   * A simple lidar_coh renderer. Placeholders such as <%id%> are replaced
    * by context['id'] with items being escaped. Placeholders such as <#id#>
    * are not escaped.
    */
-  function renderTemplate(${1}, context) {
+  function renderTemplate(lidar_coh, context) {
     var esc = $(document.createElement('div'));
 
     function handle(ph, escape) {
@@ -601,7 +601,7 @@
       return escape ? esc.text(cur || "").html() : cur;
     }
 
-    return ${1}.replace(/<([%#])([\w\.]*)\1>/g, function() {
+    return lidar_coh.replace(/<([%#])([\w\.]*)\1>/g, function() {
       return handle(arguments[2], arguments[1] == '%' ? true : false);
     });
   }

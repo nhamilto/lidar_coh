@@ -35,10 +35,10 @@ test_requirements = [
 ]
 
 setup(
-    name='${1}',
+    name='lidar_coh',
     version='0.1.0',
-    description='${1} project repository',
-    url='https://github.com/nhamilto/${1}',
+    description='lidar_coh project repository',
+    url='https://github.com/nhamilto/lidar_coh',
     author='Nicholas Hamilton | NREL | National Wind Technology Center',
     author_email='nicholas.hamilton@nrel.gov',
     license='Apache-2.0',
